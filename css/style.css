@@ -1,0 +1,18 @@
+@import './aside/aside.css';
+@import './baner/baner.css';
+@import './tabs/tabs.css';
+@import './fonts.css';
+@import './normilize.css';
+
+a {
+  color: #34aca7;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 1080px;
+  margin: 0 auto;
+  padding: 30px 0 30px;
+}

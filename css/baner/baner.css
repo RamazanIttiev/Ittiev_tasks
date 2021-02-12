@@ -1,0 +1,27 @@
+.baner {
+  display: flex;
+  flex-direction: column-reverse;
+  background: url(../../img/baner.jpg) no-repeat center/cover;
+  min-width: 896px;
+  min-height: 445px;
+}
+
+.baner__wrapper {
+  margin-bottom: 70px;
+}
+
+.baner__title,
+.baner__subtitle {
+  max-width: 270px;
+  background: white;
+  font-size: 25px;
+  font-style: italic;
+  padding: 10px 20px;
+}
+
+.baner__subtitle {
+  max-width: 490px;
+  background: black;
+  color: white;
+  font-size: 14px;
+}
