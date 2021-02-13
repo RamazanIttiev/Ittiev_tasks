@@ -1,0 +1,68 @@
+.subscribe {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 20px;
+}
+
+.subscribe::before {
+  content: '';
+  width: 100%;
+  position: absolute;
+  height: 0;
+  top: 20px;
+  border: 1px dashed #e5e5e5;
+}
+.subscribe::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  height: 0;
+  bottom: 20px;
+  border: 1px dashed #e5e5e5;
+}
+.subscribe__wrapper {
+  max-width: 530px;
+  background: url(../../icons/mail-icon.svg) no-repeat left center;
+}
+
+.subscribe__descr {
+  font-size: 14px;
+  font-style: italic;
+  margin-left: 50px;
+  line-height: 16px;
+}
+
+.subscribe__form {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1;
+  padding: 5px 0;
+}
+.subscribe__input::placeholder {
+  font-size: 10px;
+  color: #e5e5e5;
+}
+.subscribe__input {
+  max-width: 160px;
+  border: 1px solid #e5e5e5;
+  padding: 5px;
+}
+
+.subscribe__button {
+  background: linear-gradient(180deg, #f4f3f3 0%, #bbb9b9 100%);
+  border: 1px solid #e5e5e5;
+  min-width: 80px;
+  border-radius: 2px;
+  font-size: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.subscribe__button:hover {
+  background: linear-gradient(180deg, #fffefe 0%, #d6d5d5 100%);
+}
+
+.subscribe__button:active {
+  background: linear-gradient(180deg, #f4f3f3 0%, #bbb9b9 100%);
+}

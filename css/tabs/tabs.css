@@ -1,5 +1,6 @@
 .tabs {
   display: flex;
+  margin-bottom: 10px;
 }
 
 .tabs__list-item {
@@ -13,6 +14,18 @@
   padding: 25px;
   border-left: 1px solid #f9fbfb;
   border-right: 1px solid #f9fbfb;
+  transition: all 0.3s;
+}
+
+.tabs__link:hover {
+  background: #d9efec;
+  border-left: 1px solid #d9efec;
+  border-right: 1px solid #d9efec;
+  text-decoration: none;
+}
+
+.tabs__link:active {
+  background: #eff8f7;
 }
 
 .tabs__title {

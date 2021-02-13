@@ -7,6 +7,15 @@
 
 .aside__icon {
   margin-bottom: 20px;
+  transition: all 0.3s;
+}
+
+.aside__icon:hover {
+  transform: scale(1.04);
+}
+
+.aside__icon:active {
+  transform: scale(1);
 }
 
 .aside__link {
@@ -63,6 +72,17 @@
   background: transparent;
   display: block;
   width: 100%;
+  transition: all 0.3s;
+}
+
+.aside__button:hover {
+  background: #34aca7;
+  color: white;
+  text-decoration: none;
+}
+
+.aside__button:active {
+  transform: scale(1);
 }
 
 .aside__button::before {
