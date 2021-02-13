@@ -15,7 +15,7 @@
 
 .baner__title,
 .baner__subtitle {
-  max-width: 270px;
+  width: 270px;
   background: white;
   font-size: 22px;
   font-style: italic;
@@ -23,7 +23,7 @@
 }
 
 .baner__subtitle {
-  max-width: 490px;
+  width: 490px;
   background: black;
   color: white;
   font-size: 14px;

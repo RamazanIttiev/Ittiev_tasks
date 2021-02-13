@@ -1,28 +1,11 @@
-@import './aside/aside.css';
-@import './baner/baner.css';
-@import './tabs/tabs.css';
+@import './layout/baner.css';
+@import './layout/aside.css';
+@import './layout/tabs.css';
 @import './fonts.css';
-@import './subscribe/subscribe.css';
+@import './layout/subscribe.css';
 @import './normilize.css';
-@import './posts/posts.css';
-@import './footer/footer.css';
+@import './layout/posts.css';
+@import './layout/footer.css';
 @import './normilize.css';
 @import './media.css';
-
-a {
-  color: #34aca7;
-  cursor: pointer;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.container {
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: space-between;
-  width: 1080px;
-  margin: 0 auto;
-  padding: 30px 0 30px;
-}
+@import './media.css';

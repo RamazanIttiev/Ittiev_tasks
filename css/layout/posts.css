@@ -7,7 +7,7 @@
 .posts__card {
   display: flex;
   flex-direction: column;
-  max-width: 210px;
+  width: 210px;
 }
 
 .posts__img {
