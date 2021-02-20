@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="icons/icon-logo.svg" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <title>Ittiev_task</title>
   </head>
   <body>
@@ -17,28 +18,28 @@
         </a>
         <ul class="aside__menu">
           <li class="aside__list-item">
-            <a href="#" class="aside__link">Tastemakers</a>
+            <a href="#" class="aside__link aside_tastemakers">Tastemakers</a>
           </li>
           <li class="aside__list-item">
-            <a href="#" class="aside__link">Blog</a>
+            <a href="#" class="aside__link aside_blog">Blog</a>
           </li>
           <li class="aside__list-item">
-            <a href="#" class="aside__link">The A-List</a>
+            <a href="#" class="aside__link aside_alist">The A-List</a>
           </li>
           <li class="aside__list-item">
-            <a href="#" class="aside__link">Contribure</a>
+            <a href="#" class="aside__link aside_contribute">Contribure</a>
           </li>
           <li class="aside__list-item">
-            <a href="#" class="aside__link">About</a>
+            <a href="#" class="aside__link aside_about">About</a>
           </li>
         </ul>
         <div class="aside__tweet">
           <div class="aside__wrapper">
-            <h2 class="aside__title">Latest tweet</h2>
+            <span class="aside__title">Latest tweet</span>
             <button class="aside__button">Join the Conversation</button>
           </div>
           <div class="aside__wrapper">
-            <h2 class="aside__title">Let’s be friends!</h2>
+            <span class="aside__title">Let’s be friends!</span>
             <p class="aside__descr">
               For weekly finds, community recommendations, and more, like us on Facebook.
             </p>
@@ -63,32 +64,33 @@
             <ul class="tabs">
               <li class="tabs__list-item">
                 <a href="#" class="tabs__link">
-                  <h2 class="tabs__title">Tastemakers</h2>
+                  <div class="tabs__title">Tastemakers</div>
                   <div class="tabs__subtitle">Feast your eyes & get reciepes!</div>
                 </a>
               </li>
               <li class="tabs__list-item">
                 <a href="#" class="tabs__link">
-                  <h2 class="tabs__title">Blog</h2>
+                  <div class="tabs__title">Blog</div>
                   <div class="tabs__subtitle">News, how-tos, stories, and more</div>
                 </a>
               </li>
               <li class="tabs__list-item">
                 <a href="#" class="tabs__link">
-                  <h2 class="tabs__title">The A-List</h2>
+                  <div class="tabs__title">The A-List</div>
                   <div class="tabs__subtitle">Handpicked, absolute favorites</div>
                 </a>
               </li>
               <li class="tabs__list-item">
                 <a href="#" class="tabs__link">
-                  <h2 class="tabs__title">Contribute</h2>
+                  <div class="tabs__title">Contribute</div>
                   <div class="tabs__subtitle">We want to hear from you!</div>
                 </a>
               </li>
             </ul>
           </nav>
         </div>
-        <!--!!!!!!!!!!! FORM !!!!!!!!!!!-->
+
+        <!--!!!!!!!!!!! SUBSCRIBE !!!!!!!!!!!-->
 
         <div class="subscribe">
           <div class="subscribe__wrapper">
@@ -98,8 +100,10 @@
             </p>
           </div>
           <form action="#" class="subscribe__form">
-            <input type="text" placeholder="Email" class="subscribe__input" />
-            <button type="submit" class="subscribe__button">Subscribe</button>
+            <div class="subscribe__box">
+              <input type="text" placeholder="Email" class="subscribe__input" />
+              <button type="submit" class="subscribe__button">Subscribe</button>
+            </div>
           </form>
         </div>
 
@@ -108,7 +112,7 @@
         <div class="posts">
           <article class="posts__card">
             <img src="./img/image.jpg" alt="2012’s Best Summer Cookbooks" class="posts__img" />
-            <h2 class="posts__title">2012’s Best Summer Cookbooks</h2>
+            <a class="posts__title">2012’s Best Summer Cookbooks</a>
             <p class="posts__descr">
               With the best of the season coming from “orchards, farms and gardens,” NPR has put
               together an impressive collection of 10 summer cookbooks.
@@ -120,7 +124,7 @@
           </article>
           <article class="posts__card">
             <img src="./img/image-1.jpg" alt="2012’s Best Summer Cookbooks" class="posts__img" />
-            <h2 class="posts__title">How to Make Vegetable Chips</h2>
+            <a class="posts__title">How to Make Vegetable Chips</a>
             <p class="posts__descr">
               About a month ago, I ate almost an entire box of kale chips. My brother and I were
               visiting our cousin in Brooklyn, and before a very thoughtfully prepared vagan...
@@ -132,7 +136,7 @@
           </article>
           <article class="posts__card">
             <img src="./img/image-2.jpg" alt="2012’s Best Summer Cookbooks" class="posts__img" />
-            <h2 class="posts__title">Join us on Pinterest!</h2>
+            <a class="posts__title">Join us on Pinterest!</a>
             <p class="posts__descr">If I could curate a cookbook for you, this would be it.</p>
             <footer class="posts__footer">
               <span class="posts__date">May 23, 2012</span>
@@ -141,7 +145,7 @@
           </article>
           <article class="posts__card">
             <img src="./img/image-3.jpg" alt="2012’s Best Summer Cookbooks" class="posts__img" />
-            <h2 class="posts__title">Recipes from a Sunday Supper</h2>
+            <a class="posts__title">Recipes from a Sunday Supper</a>
             <p class="posts__descr">
               I could not figure out what to do with the delectable slices of Pear Cake that I
               brought home from this wonderful Sunday supper - eat them slowly, a little bit at...
@@ -152,9 +156,8 @@
             </footer>
           </article>
         </div>
-
-        <!--!!!!!!!!!!! FOOTER !!!!!!!!!!!-->
       </main>
+
       <footer class="footer">
         <div class="footer__wrapper">
           <ul class="footer__links">
@@ -173,13 +176,13 @@
         <div class="footer__icons">
           <ul class="footer__icon-list">
             <li>
-              <a href="#" class="footer__twitter footer__icon"></a>
+              <a href="#" class="footer__icon footer_twitter"></a>
             </li>
             <li>
-              <a href="#" class="footer__facebook footer__icon"></a>
+              <a href="#" class="footer__icon footer_facebook"></a>
             </li>
             <li>
-              <a href="#" class="footer__wifi footer__icon"></a>
+              <a href="#" class="footer__icon footer_wifi"></a>
             </li>
           </ul>
         </div>

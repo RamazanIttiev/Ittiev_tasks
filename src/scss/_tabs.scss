@@ -1,0 +1,34 @@
+.tabs {
+  width: 100%;
+  display: flex;
+  margin-bottom: 10px;
+  &__list-item {
+    max-width: 224px;
+    flex: 1;
+  }
+  &__link {
+    display: block;
+    background: #eff8f7;
+    padding: 25px;
+    border-left: 1px solid #f9fbfb;
+    border-right: 1px solid #f9fbfb;
+    transition: all 0.3s;
+    min-height: 100%;
+    &:hover {
+      background: #d9efec;
+      border-left: 1px solid #d9efec;
+      border-right: 1px solid #d9efec;
+      text-decoration: none;
+    }
+    &:active {
+      background: #eff8f7;
+    }
+  }
+  &__title {
+    font-size: 18px;
+  }
+  &__subtitle {
+    font-size: 10px;
+    font-style: italic;
+  }
+}
