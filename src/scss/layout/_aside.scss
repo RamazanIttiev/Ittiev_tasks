@@ -23,20 +23,10 @@
     font-style: italic;
     padding: 20px 20px 20px 50px;
   }
-  &_tastemakers {
-    background: url('../icons/food-icon.svg') no-repeat left center;
-  }
-  &_blog {
-    background: url('../icons/blog-icon.svg') no-repeat left center;
-  }
-  &_alist {
-    background: url('../icons/a-list-icon.svg') no-repeat left center;
-  }
-  &_contribute {
-    background: url('../icons/camera-icon.svg') no-repeat left center;
-  }
-  &_about {
-    background: url('../icons/about-icon.svg') no-repeat left center;
+  @each $listIcon in tastemakers, blog, alist, contribute, about {
+    .aside_#{$listIcon} {
+      background: url('../icons/#{$listIcon}-icon.svg') no-repeat left center;
+    }
   }
   &__wrapper:last-child {
     margin-top: 10px;
@@ -47,17 +37,17 @@
     text-transform: uppercase;
     padding-bottom: 5px;
     margin-bottom: 10px;
-    border-bottom: 1px dashed #e5e5e5;
+    border-bottom: 1px dashed $smokie;
     display: block;
   }
   &__button {
     position: relative;
     font-size: 10px;
     padding: 10px 10px 10px 20px;
-    border: 1px solid #e5e5e5;
+    border: 1px solid $smokie;
     box-sizing: border-box;
     border-radius: 5px;
-    color: #34aca7;
+    color: $primary;
     font-style: italic;
     cursor: pointer;
     background: transparent;
@@ -65,7 +55,7 @@
     width: 100%;
     transition: all 0.3s;
     &:hover {
-      background: #34aca7;
+      background: $primary;
       color: white;
       text-decoration: none;
     }

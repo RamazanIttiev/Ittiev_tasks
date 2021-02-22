@@ -8,20 +8,20 @@
   }
   &__link {
     display: block;
-    background: #eff8f7;
+    background: $secondary;
     padding: 25px;
-    border-left: 1px solid #f9fbfb;
-    border-right: 1px solid #f9fbfb;
+    border-left: 1px solid $smokie;
+    border-right: 1px solid $smokie;
     transition: all 0.3s;
     min-height: 100%;
     &:hover {
-      background: #d9efec;
-      border-left: 1px solid #d9efec;
-      border-right: 1px solid #d9efec;
+      background: $secondaryHover;
+      border-left: 1px solid $secondaryHover;
+      border-right: 1px solid $secondaryHover;
       text-decoration: none;
     }
     &:active {
-      background: #eff8f7;
+      background: $secondary;
     }
   }
   &__title {

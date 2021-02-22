@@ -3,7 +3,6 @@
   position: relative;
   display: flex;
   justify-content: space-around;
-  padding: 30px 20px;
   &::before {
     content: '';
     width: 100%;
@@ -19,6 +18,9 @@
     height: 0;
     bottom: 20px;
     border: 1px dashed #e5e5e5;
+  }
+  &_layout {
+    padding: 30px 20px;
   }
   &__wrapper {
     max-width: 530px;
@@ -52,7 +54,7 @@
     }
   }
   &__button {
-    background: linear-gradient(180deg, #f4f3f3 0%, #bbb9b9 100%);
+    background: $gradient;
     border: 1px solid #e5e5e5;
     min-width: 80px;
     border-radius: 2px;
@@ -60,10 +62,10 @@
     cursor: pointer;
     transition: all 0.3s;
     &:hover {
-      background: linear-gradient(180deg, #fffefe 0%, #d6d5d5 100%);
+      background: $gradientHover;
     }
     &:active {
-      background: linear-gradient(180deg, #f4f3f3 0%, #bbb9b9 100%);
+      background: $gradient;
     }
   }
 }

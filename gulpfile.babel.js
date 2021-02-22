@@ -80,7 +80,7 @@ export const reload = () => {
       server: dirs.build,
     }),
     watch(`${dirs.src}/*.html`, series(html)),
-    watch(`${dirs.src}/scss/*.scss`, series(styles))
+    watch(`${dirs.src}/scss/**/*.scss`, series(styles))
   );
 };
 

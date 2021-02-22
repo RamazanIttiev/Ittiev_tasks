@@ -7,13 +7,9 @@
     width: 80%;
   }
 
-  /* BANER */
-
   .baner {
     width: 100%;
   }
-
-  /* TABS */
 
   .tabs {
     &__title {
@@ -28,10 +24,10 @@
     }
   }
 
-  /* SUBSCRIBE */
-
   .subscribe {
-    padding: 30px 10px;
+    &_layout {
+      padding: 30px 10px;
+    }
     &__wrapper {
       width: 410px;
     }
@@ -39,8 +35,6 @@
       padding: 10px 0;
     }
   }
-
-  /* POSTS */
 
   .posts {
     &__card {
@@ -59,8 +53,6 @@
   main {
     width: 100%;
   }
-
-  /* ASIDE */
 
   .aside {
     width: 100%;
@@ -84,32 +76,18 @@
     &__tweet {
       display: none;
     }
-    &_tastemakers {
-      background: url('../icons/food-icon.svg') no-repeat center top;
-    }
-    &_blog {
-      background: url('../icons/blog-icon.svg') no-repeat center top;
-    }
-    &_alist {
-      background: url('../icons/a-list-icon.svg') no-repeat center top;
-    }
-    &_contribute {
-      background: url('../icons/camera-icon.svg') no-repeat center top;
-    }
-    &_about {
-      background: url('../icons/about-icon.svg') no-repeat center top;
+    @each $listIcon in tastemakers, blog, alist, contribute, about {
+      .aside_#{$listIcon} {
+        background: url('../icons/#{$listIcon}-icon.svg') no-repeat center top;
+      }
     }
   }
-
-  /* SUBSCRIBE */
 
   .subscribe {
     &__descr {
       font-size: 12px;
     }
   }
-
-  /* POSTS */
 
   .posts {
     &__card {
@@ -125,8 +103,6 @@
     width: 90%;
   }
 
-  /* ASIDE */
-
   .aside {
     justify-content: space-between;
     margin: 0;
@@ -136,7 +112,7 @@
     }
     &__link {
       font-size: 12px;
-      background: none;
+      background: none !important;
       padding: 8px;
     }
     &__list-item {
@@ -146,12 +122,10 @@
     }
   }
 
-  /* BANER */
-
   .baner {
     &__wrapper {
-      background: url(../img/baner.jpg) no-repeat 70%/130%;
-      height: 260px;
+      background: url(../img/baner.jpg) no-repeat 70%/110%;
+      height: 290px;
     }
     &__descr {
       margin-bottom: 0;
@@ -165,13 +139,9 @@
     }
   }
 
-  /* TABS */
-
   .tabs {
     display: none;
   }
-
-  /* SUBSCRIBE */
 
   .subscribe {
     flex-wrap: wrap;
@@ -187,8 +157,6 @@
       width: 280px;
     }
   }
-
-  /* POSTS */
 
   .posts {
     flex-wrap: wrap;
@@ -220,8 +188,6 @@
     padding: 20px 0;
   }
 
-  /* ASIDE */
-
   .aside {
     flex-direction: column-reverse;
     align-items: center;
@@ -233,9 +199,11 @@
     }
   }
 
-  /* BANER */
-
   .baner {
+    &__wrapper {
+      background: url(../img/baner.jpg) no-repeat 70%/120%;
+      height: 280px;
+    }
     &__title {
       font-size: 15px;
       padding: 10px;
@@ -246,8 +214,6 @@
     }
   }
 
-  /* SUBSCRIBE */
-
   .subscribe {
     &__descr {
       font-size: 13px;
@@ -257,15 +223,13 @@
     }
   }
 
-  /* POSTS */
-
   .posts {
     &__card {
       width: 75%;
       margin: 0 auto;
     }
     &__img {
-      height: 140px;
+      height: 180px;
     }
     &__title {
       min-height: initial;
@@ -274,8 +238,6 @@
       margin-bottom: 15px;
     }
   }
-
-  /* FOOTER */
 
   .footer {
     width: 90%;
