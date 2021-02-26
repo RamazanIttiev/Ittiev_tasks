@@ -13,15 +13,15 @@
   &__title,
   &__subtitle {
     width: 270px;
-    background: white;
+    background: #fff;
     font-size: 22px;
-    font-style: italic;
+    @include mainFont;
     padding: 10px 20px;
   }
   &__subtitle {
     width: 490px;
     background: black;
-    color: white;
+    color: #fff;
     font-size: 14px;
   }
 }

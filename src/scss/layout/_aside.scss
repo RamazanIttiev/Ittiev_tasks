@@ -20,7 +20,7 @@
   }
   &__link {
     font-size: 14px;
-    font-style: italic;
+    @include mainFont;
     padding: 20px 20px 20px 50px;
   }
   @each $listIcon in tastemakers, blog, alist, contribute, about {
@@ -32,7 +32,7 @@
     margin-top: 10px;
   }
   &__title {
-    font-family: 'Verdana Regular';
+    @include font;
     font-size: 12px;
     text-transform: uppercase;
     padding-bottom: 5px;
@@ -48,7 +48,7 @@
     box-sizing: border-box;
     border-radius: 5px;
     color: $primary;
-    font-style: italic;
+    @include mainFont;
     cursor: pointer;
     background: transparent;
     display: block;
@@ -75,7 +75,7 @@
   }
   &__descr {
     font-size: 10px;
-    font-style: italic;
+    @include mainFont;
     line-height: 20px;
     margin-bottom: 10px;
   }

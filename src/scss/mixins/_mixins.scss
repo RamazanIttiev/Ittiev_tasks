@@ -1,0 +1,11 @@
+@mixin mainFont {
+  font-family: $primaryFont;
+  font-style: italic;
+  font-weight: normal;
+}
+
+@mixin font {
+  font-family: $secondaryFont;
+  font-style: normal;
+  font-weight: normal;
+}

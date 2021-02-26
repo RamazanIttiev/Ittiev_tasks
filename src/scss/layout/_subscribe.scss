@@ -9,7 +9,7 @@
     position: absolute;
     height: 0;
     top: 20px;
-    border: 1px dashed #e5e5e5;
+    border: 1px dashed $smokie;
   }
   &::after {
     content: '';
@@ -17,7 +17,7 @@
     position: absolute;
     height: 0;
     bottom: 20px;
-    border: 1px dashed #e5e5e5;
+    border: 1px dashed $smokie;
   }
   &_layout {
     padding: 30px 20px;
@@ -25,11 +25,13 @@
   &__wrapper {
     max-width: 530px;
     background: url(../icons/mail-icon.svg) no-repeat left center;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
   }
   &__descr {
     font-size: 14px;
-    font-style: italic;
-    margin-left: 50px;
+    @include mainFont;
     line-height: 16px;
   }
   &__form {
@@ -46,16 +48,16 @@
   }
   &__input {
     width: 160px;
-    border: 1px solid #e5e5e5;
+    border: 1px solid $smokie;
     padding: 5px;
     &::placeholder {
       font-size: 10px;
-      color: #e5e5e5;
+      color: $smokie;
     }
   }
   &__button {
     background: $gradient;
-    border: 1px solid #e5e5e5;
+    border: 1px solid $smokie;
     min-width: 80px;
     border-radius: 2px;
     font-size: 10px;
