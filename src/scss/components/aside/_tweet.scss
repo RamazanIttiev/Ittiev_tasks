@@ -1,0 +1,51 @@
+.aside {
+  &__wrapper:last-child {
+    margin-top: 10px;
+  }
+  &__title {
+    @include font;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed $smokie;
+    display: block;
+  }
+  &__button {
+    position: relative;
+    font-size: 10px;
+    padding: 10px 10px 10px 20px;
+    @include borderSolid;
+    border-radius: 5px;
+    color: $primary;
+    @include mainFont;
+    cursor: pointer;
+    background: transparent;
+    display: block;
+    width: 100%;
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.1);
+      text-decoration: none;
+    }
+    &:active {
+      transform: scale(1);
+    }
+    &::before {
+      content: '';
+      background: url(../../assets/icons/twitter-green-icon.svg) no-repeat center/cover;
+      display: block;
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      left: 7px;
+      top: 7px;
+    }
+  }
+  &__descr {
+    font-size: 10px;
+    @include mainFont;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+}

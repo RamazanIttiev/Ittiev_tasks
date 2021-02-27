@@ -1,0 +1,47 @@
+@media all and (max-width: 1176px) {
+  .container {
+    width: 960px;
+  }
+
+  main {
+    width: 80%;
+  }
+
+  .baner {
+    width: 100%;
+  }
+
+  .tabs {
+    &__title {
+      font-size: 14px;
+      text-align: center;
+    }
+    &__subtitle {
+      display: none;
+    }
+    &__link {
+      padding: 15px;
+    }
+  }
+
+  .subscribe {
+    &_layout {
+      padding: 30px 10px;
+    }
+    &__wrapper {
+      width: 410px;
+    }
+    &__form {
+      padding: 10px 0;
+    }
+  }
+
+  .posts {
+    &__card {
+      width: 170px;
+    }
+    &__img {
+      height: 110px;
+    }
+  }
+}

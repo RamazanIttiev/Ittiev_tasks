@@ -14,22 +14,21 @@ const dirs = {
   build: 'build',
 };
 
-const dests = {
-  cssSrc: `${dirs.src}/css`,
+const prod = {
   css: `${dirs.build}/css`,
   scss: `${dirs.build}/css`,
-  images: `${dirs.build}/img`,
-  icons: `${dirs.build}/icons`,
-  fonts: `${dirs.build}/fonts`,
+  images: `${dirs.build}/assets/img`,
+  icons: `${dirs.build}/assets/icons`,
+  fonts: `${dirs.build}/assets/fonts`,
   scripts: `${dirs.build}/js`,
 };
 
 const sources = {
   styles: `${dirs.src}/scss/**/*.scss`,
   html: `${dirs.src}/*.html`,
-  images: `${dirs.src}/img/*`,
-  icons: `${dirs.src}/icons/*`,
-  fonts: `${dirs.src}/fonts/*`,
+  images: `${dirs.src}/assets/img/*`,
+  icons: `${dirs.src}/assets/icons/*`,
+  fonts: `${dirs.src}/assets/fonts/*`,
   scripts: `${dirs.src}/js/**/*.js`,
 };
 
@@ -65,21 +64,20 @@ export const styles = () => {
         compatibility: 'ie8',
       }),
     )
-    .pipe(dest(dests.cssSrc))
-    .pipe(dest(dests.css))
+    .pipe(dest(prod.css))
     .pipe(browserSync.stream());
 };
 
 export const images = () => {
-  return src(sources.images).pipe(imagemin()).pipe(dest(dests.images));
+  return src(sources.images).pipe(imagemin()).pipe(dest(prod.images));
 };
 
 export const icons = () => {
-  return src(sources.icons).pipe(dest(dests.icons));
+  return src(sources.icons).pipe(dest(prod.icons));
 };
 
 export const fonts = () => {
-  return src(sources.fonts).pipe(dest(dests.fonts));
+  return src(sources.fonts).pipe(dest(prod.fonts));
 };
 
 export const reload = () => {

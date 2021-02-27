@@ -1,0 +1,12 @@
+.aside {
+  &__icon {
+    margin-bottom: 20px;
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.04);
+    }
+    &:active {
+      transform: scale(1);
+    }
+  }
+}

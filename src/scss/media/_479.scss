@@ -1,0 +1,75 @@
+@media all and (max-width: 479px) {
+  .container {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .aside {
+    flex-direction: column-reverse;
+    align-items: center;
+    &__menu {
+      margin-bottom: 20px;
+    }
+    &__link {
+      padding: 8px;
+    }
+  }
+
+  .baner {
+    &__wrapper {
+      background: url(../assets/img/baner.jpg) no-repeat 70%/120%;
+      height: 280px;
+    }
+    &__title {
+      font-size: 15px;
+      padding: 10px;
+    }
+    &__subtitle {
+      font-size: 12px;
+      padding: 10px;
+    }
+  }
+
+  .subscribe {
+    &__descr {
+      font-size: 13px;
+    }
+    &__input {
+      width: 190px;
+    }
+  }
+
+  .posts {
+    &__card {
+      width: 75%;
+      margin: 0 auto;
+    }
+    &__img {
+      height: 180px;
+    }
+    &__title {
+      min-height: initial;
+    }
+    &__descr {
+      margin-bottom: 15px;
+    }
+  }
+
+  .footer {
+    width: 90%;
+    margin: 0 auto;
+    &__icon {
+      width: 20px;
+      height: 20px;
+    }
+    &__link {
+      font-size: 11px;
+    }
+    &__links li {
+      padding-right: 4px;
+    }
+    &__copyright {
+      font-size: 11px;
+    }
+  }
+}

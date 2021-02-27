@@ -1,13 +1,21 @@
 @import 'normilize';
+
 @import 'variables/colors';
 @import 'variables/fontsVar';
+
 @import 'mixins/mixins';
-@import 'layout/blocks';
-@import 'layout/baner';
-@import 'layout/aside';
-@import 'layout/tabs';
-@import 'layout/subscribe';
-@import 'layout/posts';
-@import 'layout/footer';
+
+@import 'components/base';
+@import 'components/baner';
+@import 'components/aside';
+@import 'components/tabs';
+@import 'components/subscribe';
+@import 'components/posts';
+@import 'components/footer';
+
 @import 'fonts';
-@import 'media';
+
+@import 'media/1176';
+@import 'media/991';
+@import 'media/767';
+@import 'media/479';

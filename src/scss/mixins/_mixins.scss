@@ -9,3 +9,18 @@
   font-style: normal;
   font-weight: normal;
 }
+
+@mixin borderSolid {
+  border: 1px solid $smokie;
+}
+
+@mixin borderDashed {
+  border: 1px dashed $smokie;
+}
+@mixin gradientBgr {
+  background: $gradientPrimary;
+}
+
+@mixin gradientBgrHover {
+  background: $gradientPrimaryHover;
+}

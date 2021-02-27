@@ -22,10 +22,13 @@
     font-size: 14px;
     @include mainFont;
     padding: 20px 20px 20px 50px;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: center;
   }
   @each $listIcon in tastemakers, blog, alist, contribute, about {
-    .aside_#{$listIcon} {
-      background: url('../icons/#{$listIcon}-icon.svg') no-repeat left center;
+    &_#{$listIcon} {
+      background-image: url('../../assets/icons/#{$listIcon}-icon.svg');
     }
   }
   &__wrapper:last-child {
@@ -45,7 +48,6 @@
     font-size: 10px;
     padding: 10px 10px 10px 20px;
     border: 1px solid $smokie;
-    box-sizing: border-box;
     border-radius: 5px;
     color: $primary;
     @include mainFont;
@@ -55,8 +57,7 @@
     width: 100%;
     transition: all 0.3s;
     &:hover {
-      background: $primary;
-      color: white;
+      transform: scale(1.1);
       text-decoration: none;
     }
     &:active {
@@ -64,7 +65,7 @@
     }
     &::before {
       content: '';
-      background: url(../icons/twitter-green-icon.svg) no-repeat center/cover;
+      background: url(../../assets/icons/twitter-green-icon.svg) no-repeat center/cover;
       display: block;
       position: absolute;
       width: 16px;

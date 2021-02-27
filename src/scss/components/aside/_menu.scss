@@ -1,0 +1,20 @@
+.aside {
+  &__list-item {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 20px;
+  }
+  &__link {
+    font-size: 14px;
+    @include mainFont;
+    padding: 20px 20px 20px 50px;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: center;
+  }
+  @each $listIcon in tastemakers, blog, alist, contribute, about {
+    &_#{$listIcon} {
+      background-image: url('../../assets/icons/#{$listIcon}-icon.svg');
+    }
+  }
+}
