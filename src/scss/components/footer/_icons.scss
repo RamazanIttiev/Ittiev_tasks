@@ -1,31 +1,4 @@
 .footer {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 25px 0 0;
-  border-top: 1px solid $smokie;
-  &_layout {
-    margin-top: 15px;
-  }
-  &__links {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5px;
-  }
-  &__link {
-    font-size: 12px;
-  }
-  &__links li {
-    border-right: 1px solid $smokie;
-    padding-right: 5px;
-    &:last-child {
-      border-right: none;
-    }
-  }
-  &__copyright {
-    font-size: 12px;
-    color: $smokie;
-  }
   &__icon-list {
     display: flex;
   }
@@ -35,7 +8,6 @@
       margin-right: 0;
     }
   }
-
   &__icon {
     display: block;
     width: 25px;

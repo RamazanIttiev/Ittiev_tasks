@@ -5,13 +5,13 @@
 
 @import 'mixins/mixins';
 
-@import 'components/base';
-@import 'components/baner';
-@import 'components/aside';
-@import 'components/tabs';
-@import 'components/subscribe';
-@import 'components/posts';
-@import 'components/footer';
+@import 'components/base/base';
+@import 'components/baner/baner';
+@import 'components/aside/aside';
+@import 'components/tabs/tabs';
+@import 'components/subscribe/subscribe';
+@import 'components/posts/posts';
+@import 'components/footer/footer';
 
 @import 'fonts';
 

@@ -1,11 +1,4 @@
 .posts {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  &_layout {
-    margin-top: 10px;
-  }
   &__card {
     display: flex;
     flex-direction: column;
@@ -25,7 +18,7 @@
     margin-bottom: 10px;
     min-height: 40px;
   }
-  &__descr {
+  &__desc {
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 10px;

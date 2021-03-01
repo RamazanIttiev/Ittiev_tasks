@@ -1,0 +1,25 @@
+.subscribe {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  &::before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 0;
+    top: 20px;
+    @include borderDashed;
+  }
+  &::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 0;
+    bottom: 20px;
+    @include borderDashed;
+  }
+  &_layout {
+    padding: 30px 20px;
+  }
+}

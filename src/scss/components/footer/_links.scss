@@ -1,0 +1,21 @@
+.footer {
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  &__link {
+    font-size: 12px;
+  }
+  &__links li {
+    border-right: 1px solid $smokie;
+    padding-right: 5px;
+    &:last-child {
+      border-right: none;
+    }
+  }
+  &__copyright {
+    font-size: 12px;
+    color: $smokie;
+  }
+}

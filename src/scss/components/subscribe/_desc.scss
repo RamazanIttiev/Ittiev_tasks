@@ -1,0 +1,14 @@
+.subscribe {
+  &__wrapper {
+    max-width: 530px;
+    background: url(../../assets/icons/mail-icon.svg) no-repeat left center;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+  }
+  &__desc {
+    font-size: 14px;
+    @include mainFont;
+    line-height: 16px;
+  }
+}

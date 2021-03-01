@@ -1,0 +1,10 @@
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0 0;
+  border-top: 1px solid $smokie;
+  &_layout {
+    margin-top: 15px;
+  }
+}
